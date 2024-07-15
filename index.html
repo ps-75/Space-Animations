@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACE ANIMATIONS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        GREETINGS!!
+    </div>
+    <div class="solar-system">
+        <div class="info1">
+            <p class="text1" style="color: blue;">
+                The solar system includes the Sun, eight planets,hundreds of moons, asteroids and comets. Our solar
+                system is located in the Orion Spur of the Milky Way</p>
+            <p class="clickhere" style="color: rgb(234, 7, 38);">Click Below to see animation of Solar Sysem</p>
+        </div>
+        <div class="button-container">
+            <button id="ss" style="color: rgb(239, 5, 122);">SOLAR SYSTEM</button>
+        </div>
+    </div>
+    <div class="meteorshower">
+        <div class="info1">
+            <p class="text2" style="color: purple;">
+                It is a celestial event where numerous meteors radiate from a point in the night sky, occur when the Earth passes through debris left by a comet or asteroid.</p>
+            <p class="clickhere"  style="color: rgb(234, 7, 38);">Click Below to see animation of Meteor Shower</p>
+        </div>
+        <div class="button-container">
+            <button id="ms" style="color: fuchsia;">METEOR SHOWER</button>
+        </div>
+    </div>
+    <div class="black-hole">
+        <div class="info1">
+            <p class="text3" style="color: rgb(0, 191, 255);">
+                A black hole is a cosmic object formed when a massive star collapses under its own gravity after exhausting its nuclear fuel.</p>
+                <p class="text4" style="color: rgb(0, 191, 255);">
+                    Its gravitational pull is so strong that it traps even light, leading to a region of space-time from which nothing can escape, not even information.</p>   
+            <p class="clickhere"  style="color: rgb(234, 7, 38);">Click Below to see animation of Black Hole</p>
+        </div>
+        <div class="button-container">
+            <button id="bh" style="color: rgb(0, 255, 51);">BLACK HOLE</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('ss').addEventListener('click', function () {
+            window.location.href = 'solarsystem.html';
+        });
+        document.getElementById('ms').addEventListener('click', function () {
+            window.location.href = 'meteorshower.html';
+        });
+        document.getElementById('bh').addEventListener('click', function () {
+            window.location.href = 'blackhole.html';
+        });
+    </script>
+</body>
+
+</html>

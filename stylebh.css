@@ -1,0 +1,152 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.black-hole {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #000;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.object {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle at 30% 30%, rgb(255, 255, 0), rgb(239, 164, 25), rgb(246, 76, 76));
+    border-radius: 50%;
+    box-shadow: 0 0 100px rgba(255, 242, 0, 0.8), inset 0 0 30px rgba(246, 255, 0, 0.6);
+    animation: objectAnimation 4s ease-in-out forwards;
+}
+.particles1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.particles2 {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.particles3 {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.particles4 {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.particles5 {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.particles6 {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.particles7 {
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.particle {
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle at 30% 30%, rgb(255, 255, 0), rgb(239, 164, 25), rgb(246, 76, 76));
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    box-shadow: 0 0 100px rgba(255, 242, 0, 0.8), inset 0 0 30px rgba(246, 255, 0, 0.6);
+    animation: particleAnimation 3s linear 3s;
+    margin: 15px;
+    opacity: 0;
+}
+
+@keyframes objectAnimation {
+    0% {
+        translate: 20;
+        width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    }
+    99% {
+        translate: -20; 
+        width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes particleAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0) scale(1);
+        width: 10px;
+    height: 10px;
+    }
+    100% {
+        opacity: 1;
+        width: 1px;
+    height: 1px;
+    }
+}

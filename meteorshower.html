@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteor Shower Animation</title>
+    <link rel="stylesheet" href="stylems.css">
+</head>
+
+<body>
+    <div class="sky">
+        <div class="meteor1">
+            <!-- <div class="circle"></div> -->
+            <div class="tail"></div>
+        </div>
+        <div class="meteor1">
+            <div class="circle"></div>
+            <div class="tail"></div>
+        </div>
+        <div class="meteor1">
+            <!-- <div class="circle"></div> -->
+            <div class="tail"></div>
+        </div>
+        <div class="meteor1">
+            <div class="circle"></div>
+            <div class="tail"></div>
+        </div>
+        <div class="meteor1">
+            <!-- <div class="circle"></div> -->
+            <div class="tail"></div>
+        </div>
+        <div class="meteor2">
+            <div class="circle"></div>
+            <div class="tail"></div>
+        </div>
+        <div class="meteor2">
+            <!-- <div class="circle"></div> -->
+            <div class="tail"></div>
+        </div>
+        <div class="meteor2">
+            <div class="circle"></div>
+            <div class="tail"></div>
+        </div>
+        <div class="meteor2">
+            <!-- <div class="circle"></div> -->
+            <div class="tail"></div>
+        </div>
+        <div class="meteor2">
+            <div class="circle"></div>
+            <div class="tail"></div>
+        </div>
+        <div class="meteor3">
+            <!-- <div class="circle"></div> -->
+            <div class="tail"></div>
+        </div>
+        <div class="meteor3">
+            <div class="circle"></div>
+            <div class="tail"></div>
+        </div>
+        <div class="meteor3">
+            <!-- <div class="circle"></div> -->
+            <div class="tail"></div>
+        </div>
+        <div class="meteor3">
+            <div class="circle"></div>
+            <div class="tail"></div>
+        </div>
+        <div class="meteor3">
+            <!-- <div class="circle"></div> -->
+            <div class="tail"></div>
+        </div>
+    </div>
+
+    <script>
+        let meteors1 = document.querySelectorAll('.meteor1');
+
+            meteors1.forEach((meteor) => {
+                animateMeteor(meteor);
+            });
+
+            function animateMeteor(meteor) {
+                const delay = Math.random() * 5;
+                meteor.style.animationDelay = `${delay}s`;
+                setTimeout(() => {
+                    animateMeteor(meteor); // Restart animation after it finishes
+                }, (delay) * 1000);
+            }
+            const meteors2 = document.querySelectorAll('.meteor2');
+
+            meteors2.forEach((meteor) => {
+                animateMeteor(meteor);
+            });
+
+            function animateMeteor(meteor) {
+                const delay = Math.random() * 5;
+                meteor.style.animationDelay = `${delay}s`;
+                setTimeout(() => {
+                    animateMeteor(meteor);
+                }, ( delay) * 1000);
+            }
+            const meteors3 = document.querySelectorAll('.meteor3');
+
+            meteors3.forEach((meteor) => {
+                animateMeteor(meteor);
+            });
+
+            function animateMeteor(meteor) {
+                const delay = Math.random() * 5;
+                meteor.style.animationDelay = `${delay}s`;
+                setTimeout(() => {
+                    animateMeteor(meteor);
+                }, (delay) * 1000);
+            }
+
+    </script>
+</body>
+
+</html>

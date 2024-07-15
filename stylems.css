@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .sky {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+  }
+  
+  .meteor1 {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    animation: meteorFall1 2s linear infinite;
+  }
+  
+  .meteor2 {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    animation: meteorFall2 2s linear infinite;
+  }
+
+  .meteor3 {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    animation: meteorFall3 2s linear infinite;
+  }
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFFFCC; 
+    box-shadow: 0 0 50px rgba(241, 240, 232, 0.8), inset 0 0 30px rgba(238, 238, 233, 0.6);
+  }
+  
+  .tail {
+    position: absolute;
+    top: -21px; 
+    left: 3px;
+    width: 2px;
+    height: 30px;
+    background: linear-gradient(135deg, #FFA500, #FFFF00);
+    box-shadow: 0 0 50px rgba(241, 240, 232, 0.8), inset 0 0 30px rgba(238, 238, 233, 0.6);
+  }
+  
+  @keyframes meteorFall1 {
+    0% {
+        opacity: 1;
+        transform: translateY(-10vh) translateX(100vw) rotate(45deg); 
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(110vh) translateX(-20vw) rotate(45deg);
+      }
+  }
+  @keyframes meteorFall2 {
+    0% {
+        opacity: 1;
+        transform: translateY(-10vh) translateX(2vw) rotate(45deg); 
+    }
+      100% {
+        opacity: 0;
+        transform: translateY(110vh) translateX(-40vw) rotate(45deg);
+      }
+  }
+  @keyframes meteorFall3 {
+    0% {
+        opacity: 1;
+        transform: translateY(-10vh) translateX(40vw) rotate(45deg);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(110vh) translateX(-20vw) rotate(45deg);
+      }
+  }
+  

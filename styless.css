@@ -1,0 +1,298 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;background: radial-gradient(circle at 30% 30%, rgb(36, 147, 232), rgb(56, 62, 243), rgb(45, 233, 243));
+    /* background-color: black; */
+    perspective: 2000px;
+}
+
+.center {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    background: radial-gradient(circle at 30% 30%, yellow, orange, red);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(255, 223, 0, 0.8), inset 0 0 30px rgba(255, 223, 0, 0.6);
+    animation: rotateSun 10s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.object {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-radius: 50%;
+    animation: rotatePlanet 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) rotateX(10deg);
+    }
+    100% {
+        transform: rotate(360deg) rotateX(10deg);
+    }
+}
+@keyframes rotateSun {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+@keyframes rotatePlanet {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.text{
+    font-size: 22px;
+}
+.box1{
+    height: 116px;
+    width: 116px;
+    background: radial-gradient(circle at 30% 30%, rgb(36, 147, 232), rgb(56, 62, 243), rgb(45, 233, 243));
+    position: absolute;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+    z-index: -1;
+}
+#ME{
+    height: 120px;
+    width: 120px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+    z-index: -2;
+}
+#MERCURY{
+    background: radial-gradient(circle at 20% 30%, #636964, #B3B3B3, #b9c8f2);
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text1{
+    font-size: 6px;
+}
+ .box2{
+    height: 176px;
+    width: 176px;
+    background: radial-gradient(circle at 30% 30%, rgb(36, 147, 232), rgb(56, 62, 243), rgb(45, 233, 243));
+    position: absolute;
+    border-radius: 50%;
+    animation: rotate 6s linear -2s infinite;
+    z-index: -3;
+}
+#V{
+    height: 180px;
+    width: 180px;
+    background-color: black;
+    position: absolute;
+    animation: rotate 6s linear -2s infinite;
+    border-radius: 50%;
+    z-index: -4;
+}
+#VENUS{
+    background: radial-gradient(circle at 20% 30%, #f6f174, #EEDC82, #e1e6f3);
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text2{
+    font-size: 8px;
+}
+.box3{
+    height: 246px;
+    width: 246px;
+    background: radial-gradient(circle at 30% 30%, rgb(36, 147, 232), rgb(56, 62, 243), rgb(45, 233, 243));
+    position: absolute;
+    border-radius: 50%;
+    animation: rotate 8s linear -3s infinite;
+    z-index: -5;
+}
+#E{
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    animation: rotate 8s linear -3s infinite;z-index: -6;
+}
+#EARTH{
+    background: radial-gradient(circle at 20% 30%, #00fd33, #0501f9, #b9c8f2);;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text3{
+    font-size: 7px;
+}
+
+.box4{
+    height: 306px;
+    width: 306px;
+    background: radial-gradient(circle at 30% 30%, rgb(36, 147, 232), rgb(56, 62, 243), rgb(45, 233, 243));
+    position: absolute;
+    border-radius: 50%;
+    animation: rotate 10s linear -4s infinite;
+    z-index: -7;
+}
+#MA{
+    height: 310px;
+    width: 310px;
+    background-color: black;
+    border-radius:50% ;
+    position: absolute;
+    animation: rotate 10s linear -4s infinite;
+    z-index: -8;
+}
+#MARS{
+    background: radial-gradient(circle at 20% 30%, #814306, #ff6c03, #e53c04);
+    width: 21px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text4{
+    font-size: 4px;
+}
+
+.box5{
+    height: 446px;
+    width: 446px;
+    background: radial-gradient(circle at 30% 30%, rgb(36, 147, 232), rgb(56, 62, 243), rgb(45, 233, 243));
+    position: absolute;
+    border-radius: 50%;
+    animation: rotate 12s linear -5s infinite;
+    z-index: -9;
+}
+#J{
+    height: 450px;
+    width: 450px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    animation: rotate 12s linear -5s infinite;
+    z-index: -10;
+}
+#JUPITER{
+    background: radial-gradient(circle at 20% 30%, #f89d01, #dd7a0a, #f4efea);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text5{
+    font-size: 10px;
+}
+
+.box6{
+    height: 556px;
+    width: 556px;
+    background: radial-gradient(circle at 30% 30%, rgb(36, 147, 232), rgb(56, 62, 243), rgb(45, 233, 243));
+    position: absolute;
+    border-radius: 50%;
+    animation: rotate 14s linear -6s infinite;
+    z-index: -11;
+}
+#S{
+    height: 560px;
+    width: 560px;
+    position: absolute;
+    background-color: black;
+    border-radius:50% ;
+    animation: rotate 14s linear -6s infinite;
+    z-index: -12;
+}
+#SATURN{
+    background: radial-gradient(circle at 20% 30%, #f6e602, #b86405, #f4efea);
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text6{
+    font-size: 8px;
+}
+
+.box7{
+    height: 676px;
+    width: 676px;
+    background: radial-gradient(circle at 30% 30%, rgb(36, 147, 232), rgb(56, 62, 243), rgb(45, 233, 243));
+    position: absolute;
+    border-radius: 50%;
+    animation: rotate 17s linear -7s infinite;
+    z-index: -13;
+}
+#U{
+    height: 680px;
+    width: 680px;
+    position: absolute;
+    background-color: black;
+    border-radius:50% ;
+    animation: rotate 17s linear -7s infinite;
+    z-index: -14;
+}
+#URANUS{
+    background: radial-gradient(circle at 30% 30%, #a6cce5, #9fd4f8, #b4cfeb);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text7{
+    font-size: 6px;
+}
+
+.box8{
+    height: 796px;
+    width: 796px;
+    background: radial-gradient(circle at 30% 30%, rgb(36, 147, 232), rgb(56, 62, 243), rgb(45, 233, 243));
+    position: absolute;
+    border-radius: 50%;
+    animation: rotate 20s linear -8s infinite;
+    z-index: -15;
+}
+
+#N{
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    background-color: black;
+    border-radius:50% ;
+    animation: rotate 20s linear -8s infinite;
+    z-index: -16;
+}
+#NEPTUNE{
+    background: radial-gradient(circle at 30% 30%, #3498db, #2980b9, #0501f9);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text8{
+    font-size: 6px;
+}
